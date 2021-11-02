@@ -1,6 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Image, ListGroup, Button, Form } from 'react-bootstrap'
+import {
+  Row,
+  Col,
+  Image,
+  ListGroup,
+  Button,
+  Form,
+  Container,
+} from 'react-bootstrap'
 import Rating from '../components/Rating'
 import products from '../products'
 import Naira from 'react-naira'
@@ -16,7 +24,7 @@ const ProductScreen = ({ history, match }) => {
   }
 
   return (
-    <>
+    <Container>
       <div>
         <Link className='btn btn-Light my-3' to={'/'}>
           Home
@@ -112,7 +120,7 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           ))}
       </Row>
-    </>
+    </Container>
   )
 }
 

@@ -12,6 +12,17 @@
   right: auto;
   padding: 5px;
 }
+.welcome {
+  font-size: 2rem;
+}
+.mav {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.desc {
+  font-size: 1.2rem;
+  font-style: italic;
+}
 
 @media screen and (max-width: 768px) {
   .caption {
