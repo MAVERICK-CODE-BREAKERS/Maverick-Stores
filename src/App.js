@@ -24,14 +24,15 @@ const App = () => {
         </Container> */}
         <Switch>
           <Route path='/' component={HomeScreen} exact />
-          <Route path='/' component={Advert} exact />
           <Route path='/product/:id' exact component={ProductScreen} />
           <Route path='/login' component={SignUp}  exact/>
           <Route path='/register' component={Register} exact />
           <Route path='/cart/:id?' component={CartPage} />
           <Route  component={NotFound}/>
       </Switch>
+    <Route path='/' component={Advert} exact />
     <Route path='/' component={PartnerCarousel} exact />
+    
     </main>
     <Footer />
     </Router>
