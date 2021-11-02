@@ -1,0 +1,49 @@
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.bread {
+  text-decoration: underline;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.cartBtn {
+  background-color: #2cccff;
+  border-radius: 0.5rem;
+}
+.cartBtn:hover {
+  background-color: white;
+  color: #2cccff;
+}
+
+.shopBtn {
+  background-color: #2cccff;
+  border-radius: 0.5rem;
+}
+.shopBtn:hover {
+  background-color: white;
+  color: #2cccff;
+}
+
+.prod {
+  position: relative;
+}
+
+.prod .fas {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #2cccff;
+  font-size: 1.5rem;
+}

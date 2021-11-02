@@ -1,0 +1,42 @@
+/* .caption {
+  top: 0;
+  bottom: auto;
+} */
+
+.caption {
+  top: 15%;
+  left: 10%;
+  text-align: left;
+  color: #222222 !important;
+  min-width: 400px;
+  right: auto;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .caption {
+    top: 5%;
+    left: 5%;
+    max-width: 100px;
+    padding: 2px;
+  }
+  .welcome {
+    font-size: 0.7rem;
+  }
+  .mav {
+    font-size: 0.8rem;
+  }
+  .desc {
+    display: none;
+  }
+  .shopBtn {
+    padding: 3px;
+    /* margin: 3px; */
+    font-size: 0.5rem;
+  }
+}
+
+.mav,
+.desc {
+  font-weight: bold;
+}
