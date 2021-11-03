@@ -10,7 +10,7 @@ const Footer = () => {
         <Container>
           <Row>
             {/* Contact us Column */}
-            <Col className='col-md-3 col-sm-6 mt-3'>
+            <Col sm={12} md={6} lg={4} xl={3}>
               <h4 className='header'>Contact Us:</h4>
               <ul className='list-unstyled'>
                 <li>
@@ -27,7 +27,7 @@ const Footer = () => {
               </ul>
             </Col>
             {/* Useful Links */}
-            <Col className='col-md-3 col-sm-6 mt-3'>
+            <Col sm={12} md={6} lg={4} xl={3}>
               <h4 className='header'>Useful Links:</h4>
               <ul className=' col list-unstyled'>
                 <li>
@@ -38,7 +38,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    Home
+                    <i class='far fa-greater-than me-2'></i>Home
                   </Link>
                 </li>
                 <li>
@@ -49,7 +49,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    About Us
+                    <i class='far fa-greater-than me-2'></i>About Us
                   </Link>
                 </li>
                 <li>
@@ -60,7 +60,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    Products
+                    <i class='far fa-greater-than me-2'></i>Products
                   </Link>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    Wishlist
+                    <i class='far fa-greater-than me-2'></i>Wishlist
                   </Link>
                 </li>
                 <li>
@@ -82,13 +82,13 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    Cart
+                    <i class='far fa-greater-than me-2'></i>Cart
                   </Link>
                 </li>
               </ul>
             </Col>
             {/* Social media Column */}
-            <Col className='col-md-3 col-sm-6 mt-3'>
+            <Col sm={12} md={6} lg={4} xl={3}>
               <h4 className='header'>Socail Media:</h4>
               <ul className='list-unstyled' style={{ display: 'flex' }}>
                 <li>
@@ -136,8 +136,8 @@ const Footer = () => {
               </ul>
             </Col>
             {/* Newsletter Column */}
-            <Col className='col-md-3 col-sm-6 mt-3'>
-              <p>
+            <Col sm={12} md={6} lg={4} xl={3}>
+              <p className='mt-4'>
                 Subscribe To Our Newsletter To Stay Up-To-Date With Latest
                 Products.
               </p>
