@@ -12,6 +12,7 @@ import PartnerCarousel from "./components/PartnerCarousel";
 import SignUp from "./components/user/SignUp";
 import NotFound from "./pages/NotFound";
 import Register from "./components/user/Register";
+import WishList from "./pages/WishList/WishList";
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/login' component={SignUp}  exact/>
           <Route path='/register' component={Register} exact />
           <Route path='/cart/:id?' component={CartPage} />
+          <Route path='/wishlist' component={WishList} exact />
           <Route  component={NotFound}/>
       </Switch>
     <Route path='/' component={Advert} exact />
