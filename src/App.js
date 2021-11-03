@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import { Container } from 'react-bootstrap'
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Navbar/Header";
-import HomeScreen from "./pages/HomeScreen";
+import HomeProducts from "./pages/HomeProducts";
 import ProductScreen from "./pages/ProductScreen";
 import CartPage from "./pages/CartPage";
 import CarouselContainer from './components/CarouselContainer';
@@ -23,7 +23,7 @@ const App = () => {
         {/* <Container>
         </Container> */}
         <Switch>
-          <Route path='/' component={HomeScreen} exact />
+          <Route path='/' component={HomeProducts} exact />
           <Route path='/product/:id' exact component={ProductScreen} />
           <Route path='/login' component={SignUp}  exact/>
           <Route path='/register' component={Register} exact />

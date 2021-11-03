@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import Product from '../components/Product'
 import products from '../products'
 
-const HomeScreen = () => {
+const HomeProducts = () => {
   return (
     <Container>
       <h1 className='text-center py-3'>Featured Products</h1>
@@ -18,4 +18,4 @@ const HomeScreen = () => {
   )
 }
 
-export default HomeScreen
+export default HomeProducts

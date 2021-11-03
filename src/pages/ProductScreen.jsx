@@ -114,11 +114,14 @@ const ProductScreen = ({ history, match }) => {
       <Row>
         {products
           .filter((rel) => rel.category === product.category)
-          .map((relatedProducts) => (
-            <Col key={relatedProducts._id} sm={12} md={6} lg={4} xl={3}>
-              <Product product={relatedProducts} />
-            </Col>
-          ))}
+          .map(
+            (relatedProducts) =>
+              product._id !== relatedProducts._id && (
+                <Col key={relatedProducts._id} sm={12} md={6} lg={4} xl={3}>
+                  <Product product={relatedProducts} />
+                </Col>
+              )
+          )}
       </Row>
     </Container>
   )
