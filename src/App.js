@@ -9,7 +9,7 @@ import CartPage from "./pages/CartPage";
 import CarouselContainer from './components/CarouselContainer';
 import Advert from "./components/Advert";
 import PartnerCarousel from "./components/PartnerCarousel";
-import SignUp from "./components/user/SignUp";
+import LogIn from "./components/user/LogIn";
 import NotFound from "./pages/NotFound";
 import Register from "./components/user/Register";
 
@@ -25,7 +25,7 @@ const App = () => {
         <Switch>
           <Route path='/' component={HomeScreen} exact />
           <Route path='/product/:id' exact component={ProductScreen} />
-          <Route path='/login' component={SignUp}  exact/>
+          <Route path='/login' component={LogIn}  exact/>
           <Route path='/register' component={Register} exact />
           <Route path='/cart/:id?' component={CartPage} />
           <Route  component={NotFound}/>

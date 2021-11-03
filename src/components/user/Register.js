@@ -75,7 +75,7 @@ function Register() {
       <div className="main-div">
         <div className="div-1">
           <div className="Path-flex">
-            <Link to="/Login">
+            <Link to="/LogIn">
               <h3>Login</h3>
             </Link>
             <Link to="#">
