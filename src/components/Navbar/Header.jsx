@@ -50,6 +50,12 @@ const Header = () => {
             Cart
           </NavLink>
         </NavMenu>
+        <NavMenu>
+          <NavLink to='/wishlist' activeStyle>
+            <i className='fas fa-heart' />
+            Wishlist
+          </NavLink>
+        </NavMenu>
         <NavBtn>
           <NavBtnLink to='/login'>Login/Register</NavBtnLink>
         </NavBtn>

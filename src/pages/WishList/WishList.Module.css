@@ -1,0 +1,17 @@
+.wishBody{
+    background: #f8f8f8;
+}
+.cardBody{
+    background: #fff;
+}
+.wishIcon{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 5px;
+    background: red;
+    color: #fff;
+    padding: 5px;
+    /* border-radius: 50%; */
+    text-align: center;
+}
