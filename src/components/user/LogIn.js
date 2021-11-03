@@ -1,5 +1,5 @@
 import React from "react";
-import "./SignUp.css";
+import "./LogIn.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
     rememberme:Yup.string().required("Required!")
   });
 
-  function SignUp() {
+  function LogIn() {
     const formik = useFormik({
       initialValues,
       onSubmit,
@@ -68,4 +68,4 @@ import { Link } from "react-router-dom";
   }
 
 
-export default SignUp;
+export default LogIn;
