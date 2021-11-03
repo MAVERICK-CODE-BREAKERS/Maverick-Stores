@@ -22,7 +22,7 @@ const Header = () => {
             alt='Maverick Digital Stores'
           />
         </Bars>
-        <Link to='/'>
+        <Link to='/' className='ms-3'>
           <img
             src={image}
             height={90}
@@ -49,14 +49,13 @@ const Header = () => {
             <i className='fas fa-shopping-cart' />
             Cart
           </NavLink>
-        </NavMenu>
-        <NavMenu>
+
           <NavLink to='/wishlist' activeStyle>
             <i className='fas fa-heart' />
             Wishlist
           </NavLink>
         </NavMenu>
-        <NavBtn>
+        <NavBtn className='me-5'>
           <NavBtnLink to='/login'>Login/Register</NavBtnLink>
         </NavBtn>
       </Nav>
