@@ -26,13 +26,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 50px;
+  height: 100%;
 }
 .div-1 {
   background: #fff;
   width: 100%;
   max-width: 30rem;
+  height: 100%;
 }
 .Register {
   display: flex;
