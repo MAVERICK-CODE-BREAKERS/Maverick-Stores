@@ -6,7 +6,7 @@ import { FooterContainer } from './FooterElements'
 const Footer = () => {
   return (
     <FooterContainer>
-      <div className='footer-middle'>
+      <div className='footer-middle mt-5'>
         <Container>
           <Row>
             {/* Contact us Column */}

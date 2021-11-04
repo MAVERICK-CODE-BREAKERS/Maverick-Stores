@@ -13,11 +13,13 @@ import LogIn from "./components/user/LogIn";
 import NotFound from "./pages/NotFound";
 import Register from "./components/user/Register";
 import WishList from "./pages/WishList/WishList";
+import Page from 'react-page-loading';
 
 
 const App = () => {
   return (
     <Router>
+      <Page loader={"bubble-spin"} color={"#2cccff"} size={9}>
     <Header />
     <main>
     <Route path='/' component={CarouselContainer} exact />      
@@ -37,6 +39,7 @@ const App = () => {
     
     </main>
     <Footer />
+    </Page>
     </Router>
   );
 }
