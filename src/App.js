@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import { Container } from 'react-bootstrap'
 import Footer from "./components/Footer/Footer";
-// import Header from "./components/Navbar/Header";
+import Header from "./components/Navbar/Header";
 import HomeProducts from "./pages/HomeProducts";
 import ProductScreen from "./pages/ProductScreen";
 import CartPage from "./pages/CartPage";
@@ -14,14 +14,13 @@ import NotFound from "./pages/NotFound";
 import Register from "./components/user/Register";
 import WishList from "./pages/WishList/WishList";
 import Page from 'react-page-loading';
-import HeaderNew from "./components/Navbar/HeaderNew";
 
 
 const App = () => {
   return (
     <Router>
       <Page loader={"bubble-spin"} color={"#2cccff"} size={9}>
-    <HeaderNew />
+    <Header />
     <main>
     <Route path='/' component={CarouselContainer} exact />      
         {/* <Container>

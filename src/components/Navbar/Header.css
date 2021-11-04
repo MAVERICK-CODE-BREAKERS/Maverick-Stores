@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+.logo {
+  padding-bottom: 10px;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 75px;
+  height: 77px;
   padding-top: 0px;
   background-color: #2cccff;
   color: white;
@@ -36,6 +39,11 @@
   /* background-color: aliceblue;
   color: #00828c; */
   border-radius: 5px;
+}
+
+.cart,
+.cart-mobile {
+  display: none;
 }
 
 .mobile-menu-icon {
@@ -92,5 +100,66 @@
     outline: none;
     top: 15px;
     right: 25px;
+  }
+  .cart-mobile {
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    right: 72px;
+    font-size: 1.2rem;
+  }
+  .cart-mobile:hover {
+    color: white;
+  }
+  .ca {
+    display: none;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1280px) {
+  .logo {
+    padding-bottom: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    padding-bottom: 10px;
+    background-color: #2cccff;
+    color: white;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 85%;
+  }
+
+  .category,
+  .signup {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 15px;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  ul {
+    padding-left: 1 rem;
+  }
+
+  .signup {
+    border: 1px solid white;
+    /* background-color: aliceblue;
+  color: #00828c; */
+    border-radius: 5px;
+    /* padding-bottom: 0; */
+  }
+
+  .mobile-menu-icon {
+    display: none;
   }
 }
