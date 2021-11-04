@@ -1,5 +1,5 @@
 import React from 'react'
-import error from './../assets/error.jpeg'
+// import error from './../assets/error.jpeg'
 import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
