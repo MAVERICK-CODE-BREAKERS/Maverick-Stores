@@ -5,6 +5,7 @@ import image from './maverick_logo2.png'
 
 const HeaderNew = () => {
   const [menuBar, setMenuBar] = useState(false)
+
   return (
     <nav className='navbar'>
       <Link to='/' className='logo'>
