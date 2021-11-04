@@ -5,10 +5,11 @@ import image from './maverick_logo2.png'
 
 const HeaderNew = () => {
   const [menuBar, setMenuBar] = useState(false)
+  // const [cart, setCart] = useState(false)
 
   return (
     <nav className='navbar'>
-      <Link to='/' className='logo'>
+      <Link to='/' className='logo mb-2'>
         <img
           src={image}
           height={90}
@@ -33,14 +34,14 @@ const HeaderNew = () => {
           <li> Accessories</li>
         </Link>
 
-        <Link to='/cart' className='category me-5'>
+        <Link to='/cart' className='category me-3'>
           <li>
             <i className='fas fa-shopping-cart' /> Cart
           </li>
         </Link>
 
-        <Link to='/login' className='signup ms-5'>
-          <li> Login</li>
+        <Link to='/login' className='signup ms-3'>
+          <li>Login/Register</li>
         </Link>
       </ul>
       <button className='mobile-menu-icon' onClick={() => setMenuBar(!menuBar)}>

@@ -8,7 +8,7 @@ const Footer = () => {
     <FooterContainer>
       <div className='footer-middle mt-5'>
         <Container>
-          <Row>
+          <Row className='mb-3'>
             {/* Contact us Column */}
             <Col sm={12} md={6} lg={4} xl={3}>
               <h4 className='header'>Contact Us:</h4>
@@ -38,7 +38,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    <i class='far fa-greater-than me-2'></i>Home
+                    <i className='far fa-greater-than me-2'></i>Home
                   </Link>
                 </li>
                 <li>
@@ -49,7 +49,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    <i class='far fa-greater-than me-2'></i>About Us
+                    <i className='far fa-greater-than me-2'></i>About Us
                   </Link>
                 </li>
                 <li>
@@ -60,7 +60,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    <i class='far fa-greater-than me-2'></i>Products
+                    <i className='far fa-greater-than me-2'></i>Products
                   </Link>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    <i class='far fa-greater-than me-2'></i>Wishlist
+                    <i className='far fa-greater-than me-2'></i>Wishlist
                   </Link>
                 </li>
                 <li>
@@ -82,7 +82,7 @@ const Footer = () => {
                       color: 'rgb(172, 172, 172)',
                     }}
                   >
-                    <i class='far fa-greater-than me-2'></i>Cart
+                    <i className='far fa-greater-than me-2'></i>Cart
                   </Link>
                 </li>
               </ul>
@@ -153,9 +153,9 @@ const Footer = () => {
           </Row>
 
           {/* Footer Bottom */}
-          <Row className='footer-bottom'>
-            <p className='text-center'>
-              <hr />
+          <Row className='footer-bottom border-top'>
+            <p className='text-center '>
+              {/* <hr /> */}
               Copyright &copy;{new Date().getFullYear()} MDS. All Rights
               Reserved.
             </p>

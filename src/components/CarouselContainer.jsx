@@ -23,9 +23,7 @@ const CarouselContainer = () => {
             </span>
           </p>
           <Link to='#'>
-            <Button className='shopBtn btn-block' type='button'>
-              Shop Now
-            </Button>
+            <Button className={caro.shopBtn}>Shop Now</Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>
@@ -42,9 +40,7 @@ const CarouselContainer = () => {
             </span>
           </p>
           <Link to='#'>
-            <Button className='shopBtn btn-block' type='button'>
-              Shop Now
-            </Button>
+            <Button className={caro.shopBtn}>Shop Now</Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>
@@ -61,9 +57,7 @@ const CarouselContainer = () => {
             </span>
           </p>
           <Link to='#'>
-            <Button className='shopBtn btn-block' type='button'>
-              Shop Now
-            </Button>
+            <Button className={caro.shopBtn}>Shop Now</Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>
@@ -79,9 +73,7 @@ const CarouselContainer = () => {
             </span>
           </p>
           <Link to='#'>
-            <Button className='shopBtn btn-block' type='button'>
-              Shop Now
-            </Button>
+            <Button className={caro.shopBtn}>Shop Now</Button>
           </Link>
         </Carousel.Caption>
       </Carousel.Item>

@@ -23,11 +23,22 @@
   font-size: 1.2rem;
   font-style: italic;
 }
+.shopBtn {
+  /* padding: 0.37rem 0.7rem; */
+  background-color: #2cccff;
+  color: white;
+  border-radius: 5px;
+  /* font-size: 0.7rem; */
+}
+.shopBtn:hover {
+  background-color: white;
+  color: #2cccff;
+}
 
 @media screen and (max-width: 768px) {
   .caption {
-    top: 5%;
-    left: 5%;
+    top: 3%;
+    left: 3%;
     max-width: 100px;
     padding: 2px;
   }
@@ -35,15 +46,23 @@
     font-size: 0.7rem;
   }
   .mav {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #000;
   }
   .desc {
     display: none;
   }
   .shopBtn {
-    padding: 3px;
-    /* margin: 3px; */
-    font-size: 0.5rem;
+    padding: 0.37rem 0.7rem;
+    background-color: #2cccff;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  .shopBtn:hover {
+    background-color: white;
+    color: #2cccff;
   }
 }
 

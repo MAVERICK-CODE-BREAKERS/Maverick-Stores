@@ -33,8 +33,8 @@
 
 .signup {
   border: 1px solid white;
-  background-color: aliceblue;
-  color: #00828c;
+  /* background-color: aliceblue;
+  color: #00828c; */
   border-radius: 5px;
 }
 
@@ -46,9 +46,9 @@
   .logo {
     display: flex;
     position: absolute;
-    padding-top: 0px;
-    top: 15px;
-    left: 35px;
+    margin-bottom: 10px;
+    top: -5px;
+    left: 5px;
   }
 
   .nav-links {
@@ -78,6 +78,8 @@
 
   .signup {
     border: none;
+    background-color: none;
+    border-radius: none;
   }
 
   .mobile-menu-icon {
