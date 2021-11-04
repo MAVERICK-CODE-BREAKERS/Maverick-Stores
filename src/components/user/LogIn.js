@@ -55,7 +55,7 @@ import { Link } from "react-router-dom";
             {formik.touched.rememberme && formik.errors.rememberme ? (
               <div classNameName="error">{formik.errors.rememberme}</div>
             ) : null}
-                  <label for="rememberme">Remember Me</label>
+                  <label htmlFor="rememberme">Remember Me</label>
                 </div>
                 {/* <Link to="#">Forgot Password?</Link> */}
               </div>

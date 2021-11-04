@@ -32,33 +32,7 @@ const validationSchema = Yup.object({
   termsAndConditions: Yup.string().required("Required!"),
 });
 
-// const validate = values => {
-//   let errors = {}
-//    if (!values.Fullname){
-//      errors.Fullname = "Required"
-//    }
-//    if (!values.PUsername){
-//     errors.PUsername = "Required"
-//   }
-//   if (!values.email){
-//     errors.email = "Required"
-//   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)){
-//     errors.email = 'Invalid email format'
-//   }
-//   if (!values.phone){
-//     errors.phone = "Required"
-//   }
-//   if(!values.password){
-//     errors.password = "Required"
-//   }
-//   if (!values.cPassword){
-//     errors.cPassword = "Required"
-//   }
-//   if (!values.termsAndConditions){
-//     errors.termsAndConditions = "Required"
-//   }
-//   return errors
-// }
+
 
 function Register() {
   const formik = useFormik({
@@ -147,7 +121,7 @@ function Register() {
             formik.errors.termsAndConditions ? (
               <div className="error">{formik.errors.termsAndConditions}</div>
             ) : null}
-            <label for="terms-and-conditions">
+            <label htmlFor="terms-and-conditions">
               I have read, Understood and accept the terms and conditions
             </label>
             <div className="LinkToSignIn">

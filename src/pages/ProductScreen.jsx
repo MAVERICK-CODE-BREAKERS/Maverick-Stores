@@ -19,7 +19,7 @@ const ProductScreen = ({ history, match }) => {
   const [quantity, setQuantity] = useState(0)
   const product = products.find((p) => p._id === match.params.id)
 
-  const addToCartHandler = () => {
+  const addToCartHandler = ({ size = 2 }) => {
     history.push(`/cart/${match.params.id}?quantity=${quantity}`)
   }
 
@@ -118,7 +118,7 @@ const ProductScreen = ({ history, match }) => {
             (relatedProducts) =>
               product._id !== relatedProducts._id && (
                 <Col key={relatedProducts._id} sm={12} md={6} lg={4} xl={3}>
-                  <Product product={relatedProducts} />
+                  <Product product={relatedProducts} size />
                 </Col>
               )
           )}

@@ -30,27 +30,20 @@ const Header = () => {
             alt='Maverick Digital Stores'
           />
         </Link>
+
         <NavMenu>
-          <NavLink to='/products/console' activeStyle>
-            CONSOLE
-          </NavLink>
-          <NavLink to='/products/laptops' activeStyle>
-            LAPTOPS
-          </NavLink>
-          <NavLink to='/products/watches' activeStyle>
-            WATCHES
-          </NavLink>
-          <NavLink to='/products/accessories' activeStyle>
-            ACCESSORIES
-          </NavLink>
+          <NavLink to='/products/console'>CONSOLE</NavLink>
+          <NavLink to='/products/laptops'>LAPTOPS</NavLink>
+          <NavLink to='/products/watches'>WATCHES</NavLink>
+          <NavLink to='/products/accessories'>ACCESSORIES</NavLink>
         </NavMenu>
         <NavMenu>
-          <NavLink to='/cart' activeStyle>
+          <NavLink to='/cart'>
             <i className='fas fa-shopping-cart' />
             Cart
           </NavLink>
 
-          <NavLink to='/wishlist' activeStyle>
+          <NavLink to='/wishlist'>
             <i className='fas fa-heart' />
             Wishlist
           </NavLink>
