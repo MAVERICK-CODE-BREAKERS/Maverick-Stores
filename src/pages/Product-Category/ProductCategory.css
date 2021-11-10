@@ -1,0 +1,24 @@
+.product-container {
+  height: 80vh;
+  width: 95%;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+.laptop-checkbox-container {
+  margin-top: 70px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2cccff;
+  border-radius: 12px;
+}
+
+.nav-pills,
+.nav-pills .show > .nav-link {
+  font-size: 1.2rem;
+}
