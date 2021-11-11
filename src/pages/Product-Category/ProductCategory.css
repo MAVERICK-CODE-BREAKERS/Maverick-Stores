@@ -22,3 +22,15 @@ label {
 .nav-pills .show > .nav-link {
   font-size: 1.2rem;
 }
+
+.accessories-checkbox-container {
+  display: none;
+}
+
+.consoles-checkbox-container {
+  display: none;
+}
+
+.SmartWatches-checkbox-container {
+  display: none;
+}

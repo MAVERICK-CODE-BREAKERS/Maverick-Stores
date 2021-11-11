@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import './Header.css'
-import { Link } from 'react-router-dom'
-import image from './maverick_logo2.png'
+import React, { useState } from "react";
+import "./Header.css";
+import { Link } from "react-router-dom";
+import image from "./maverick_logo2.png";
 
 const Header = () => {
-  const [menuBar, setMenuBar] = useState(false)
-  const [cart, setCart] = useState(false)
+  const [menuBar, setMenuBar] = useState(false);
+  const [cart, setCart] = useState(false);
 
   return (
     <nav className="navbar">
@@ -21,27 +21,16 @@ const Header = () => {
         className={menuBar ? "nav-links-mobile" : "nav-links"}
         onClick={() => setMenuBar(false)}
       >
-        <Link
-          to="/Product-Category"
-          className="category"
-        >
+        <Link to="/Product-Category" className="category">
           <li>Consoles</li>
         </Link>
-        <Link
-          to="/Product-Category"
-          className="category"
-        >
+        <Link to="/Product-Category" className="category">
           <li>Laptops</li>
         </Link>
-        <Link
-          to="/Product-Category"
-          className="category"
-        >
+        <Link to="/Product-Category" className="category">
           <li>Watches</li>
         </Link>
-        <Link
-          to="/Product-Category"
-        >
+        <Link to="/Product-Category" className="category">
           <li> Accessories</li>
         </Link>
 
@@ -74,6 +63,6 @@ const Header = () => {
       </button>
     </nav>
   );
-}
+};
 
-export default Header
+export default Header;
