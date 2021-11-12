@@ -1,12 +1,10 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Tabs from "react-bootstrap/Tabs";
-import Tab from "react-bootstrap/Tab";
+import { Col, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Image from "react-bootstrap/Image";
 import Banner from "../../assets/slides/Banner.jpg";
-import "./ProductCategory.css";
+import StyledProductCategory from "./ProductCategory.Module.css";
 
 const ProductCategory = () => {
   const message = () => {
@@ -21,10 +19,10 @@ const ProductCategory = () => {
       <div className="image-container my-5">
         <Image src={Banner} thumbnail />
       </div>
-      <div className="product-container">
+      <div className={StyledProductCategory.productContainer}>
         <Row>
           <Col className="Smaller" xs={2}>
-            <div className="laptop-checkbox-container">
+            <div className={StyledProductCategory.laptopCheckboxContainer}>
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Apple" />
@@ -37,7 +35,7 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className="consoles-checkbox-container">
+            <div className={StyledProductCategory.consolesCheckboxContainer}>
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Playstation" />
@@ -50,7 +48,7 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className="accessories-checkbox-container">
+            <div className={StyledProductCategory.accessoriesCheckboxContainer}>
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Speakers" />
@@ -63,7 +61,9 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className="SmartWatches-checkbox-container">
+            <div
+              className={StyledProductCategory.SmartWatchesCheckboxContainer}
+            >
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Apple" />
@@ -80,22 +80,39 @@ const ProductCategory = () => {
           <Col className="bigger" xs={10}>
             <Nav fill variant="pills" defaultActiveKey="link">
               <Nav.Item>
-                <Nav.Link eventKey="link" className="laptop">
+                <Nav.Link
+                  eventKey="link"
+                  className={StyledProductCategory.navLink}
+                >
                   Laptop
                 </Nav.Link>
+                /
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-1" onClick={message}>
+                <Nav.Link
+                  eventKey="link-1"
+                  onClick={message}
+                  className={StyledProductCategory.navLink}
+                >
                   Consoles
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2" onClick={message1}>
+                <Nav.Link
+                  eventKey="link-2"
+                  onClick={message1}
+                  className={StyledProductCategory.navLink}
+                >
                   Accessories
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-3">SmartWatches</Nav.Link>
+                <Nav.Link
+                  eventKey="link-3"
+                  className={StyledProductCategory.navLink}
+                >
+                  SmartWatches
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>

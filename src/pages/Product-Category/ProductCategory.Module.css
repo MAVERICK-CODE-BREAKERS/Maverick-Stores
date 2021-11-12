@@ -1,4 +1,4 @@
-.product-container {
+.productContainer {
   height: 80vh;
   width: 95%;
   margin: 0 auto;
@@ -8,29 +8,32 @@ label {
   font-size: 1.1rem;
 }
 
-.laptop-checkbox-container {
+.laptopCheckboxContainer {
   margin-top: 70px;
 }
 
-.nav-pills .nav-link.active,
+/* .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #2cccff;
   border-radius: 12px;
-}
+} */
 
-.nav-pills,
-.nav-pills .show > .nav-link {
+.navLink {
   font-size: 1.2rem;
 }
 
-.accessories-checkbox-container {
+.nav-pills .nav-link.active {
+  background-color: #89becf;
+  border-radius: 12px;
+}
+.accessoriesCheckboxContainer {
   display: none;
 }
 
-.consoles-checkbox-container {
+.consolesCheckboxContainer {
   display: none;
 }
 
-.SmartWatches-checkbox-container {
+.SmartWatchesCheckboxContainer {
   display: none;
 }
