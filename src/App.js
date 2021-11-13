@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Navbar/Header";
 import HomeProducts from "./pages/HomeProducts";
 import ProductScreen from "./pages/ProductScreen";
-import CartPage from "./pages/CartPage";
+import CartPage from "./pages/cart page/CartPage";
 import CarouselContainer from './components/CarouselContainer';
 import Advert from "./components/Advert";
 import PartnerCarousel from "./components/PartnerCarousel";
