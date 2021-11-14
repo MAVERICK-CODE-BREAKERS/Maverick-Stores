@@ -49,10 +49,34 @@ label {
 }
 
 .laptopsProductsContainer {
-  margin-top: 0.9rem;
-  background-color: aqua;
-  height: 500px;
-  
+  margin-top: 1.9rem;
   width: 100%;
   display: block;
+}
+
+.consoleProductsContainer {
+  margin-top: 1.9rem;
+  width: 100%;
+  display: none;
+}
+
+.accessoriesProductsContainer {
+  margin-top: 1.9rem;
+  width: 100%;
+  display: none;
+}
+ 
+.smartWatchesProductsContainer{
+  margin-top: 1.9rem;
+  width: 100%;
+  display: none;
+}
+
+.PriceAdjustContainer {
+  margin-top: 3.7rem;
+}
+
+.priceLabel {
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
 }

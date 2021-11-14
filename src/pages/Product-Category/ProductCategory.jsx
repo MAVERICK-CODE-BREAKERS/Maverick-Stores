@@ -2,34 +2,59 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
+import products from "../../products";
+import Product from "../../components/Product";
+import product from "../ProductScreen";
 import Image from "react-bootstrap/Image";
 import Banner from "../../assets/slides/Banner.jpg";
 import StyledProductCategory from "./ProductCategory.Module.css";
 
-const ProductCategory = () => {
+const ProductCategory = ({ history, match }) => {
+  // products checkbox states
   const [isShowLaptopForm, setIsShowLaptopForm] = useState(true);
   const [isShowConsolesForm, setIsShowConsolesForm] = useState(false);
   const [isShowAccessoriesForm, setIsShowAccessoriesForm] = useState(false);
   const [isShowSmartWatchesForm, setIsShowSmartWatchesForm] = useState(false);
 
+  // product container states
+  const [isShowLaptopProductContainer, setIsShowLaptopProductContainer] =
+    useState(true);
+  const [isShowConsolesContainer, setIShowConsolesContainer] = useState(false);
+  const [isShowAccessoriesContainer, setIsShowAccessoriesContainer] =
+    useState(false);
+  const [isShowSmartWatchesContainer, setIsShowSmartWatchesContainer] =
+    useState(false);
+
   const handleClickShow = () => {
     setIsShowConsolesForm(true);
+    setIShowConsolesContainer(true);
     setIsShowAccessoriesForm(false);
     setIsShowLaptopForm(false);
     setIsShowSmartWatchesForm(false);
+    setIsShowLaptopProductContainer(false);
+    setIsShowSmartWatchesContainer(false);
+    setIsShowAccessoriesContainer(false);
   };
   const handleClickShow1 = () => {
     setIsShowAccessoriesForm(true);
+    setIsShowAccessoriesContainer(true);
     setIsShowConsolesForm(false);
     setIsShowLaptopForm(false);
     setIsShowSmartWatchesForm(false);
+    setIsShowLaptopProductContainer(false);
+    setIShowConsolesContainer(false);
+    setIsShowSmartWatchesContainer(false);
   };
 
   const handleClickShow2 = () => {
     setIsShowSmartWatchesForm(true);
+    setIsShowSmartWatchesContainer(true);
     setIsShowAccessoriesForm(false);
     setIsShowLaptopForm(false);
     setIsShowConsolesForm(false);
+    setIsShowAccessoriesContainer(false);
+    setIsShowLaptopProductContainer(false);
+    setIShowConsolesContainer(false);
   };
 
   const handleClickShow3 = () => {
@@ -37,6 +62,10 @@ const ProductCategory = () => {
     setIsShowAccessoriesForm(false);
     setIsShowLaptopForm(true);
     setIsShowConsolesForm(false);
+    setIsShowLaptopProductContainer(false);
+    setIsShowSmartWatchesContainer(false);
+    setIsShowAccessoriesContainer(false);
+    setIsShowLaptopProductContainer(true);
   };
 
   return (
@@ -111,6 +140,22 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
+            <div className={StyledProductCategory.PriceAdjustContainer}>
+              <Form.Check
+                type="radio"
+                label="Lowest To Highest"
+                className={StyledProductCategory.priceLabel}
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+              <Form.Check
+                type="radio"
+                label="Highest To Lowest"
+                className={StyledProductCategory.priceLabel}
+                name="formHorizontalRadios"
+                id="formHorizontalRadios2"
+              />
+            </div>
           </Col>
           <Col className="bigger" xs={10}>
             <Nav fill variant="pills" defaultActiveKey="link">
@@ -151,9 +196,49 @@ const ProductCategory = () => {
                 </Nav.Link>
               </Nav.Item>
             </Nav>
-            <div className={StyledProductCategory.laptopsProductsContainer}>
-              <p>lllllll</p>
+            <div
+              className={StyledProductCategory.laptopsProductsContainer}
+              style={{
+                display: isShowLaptopProductContainer ? "block" : "none",
+              }}
+            >
+              {/* <Row>
+                {products
+                  .filter((rel) => rel.category === product.category)
+                  .map(
+                    (relatedProducts) =>
+                      product._id !== relatedProducts._id && (
+                        <Col
+                          key={relatedProducts._id}
+                          sm={12}
+                          md={6}
+                          lg={4}
+                          xl={3}
+                        >
+                          <Product product={relatedProducts} size />
+                        </Col>
+                      )
+                  )}
+              </Row> */}
             </div>
+            <div
+              className={StyledProductCategory.consoleProductsContainer}
+              style={{
+                display: isShowConsolesContainer ? "block" : "none",
+              }}
+            ></div>
+            <div
+              className={StyledProductCategory.accessoriesProductsContainer}
+              style={{
+                display: isShowAccessoriesContainer ? "block" : "none",
+              }}
+            ></div>
+            <div
+              className={StyledProductCategory.smartWatchesProductsContainer}
+              style={{
+                display: isShowSmartWatchesContainer ? "block" : "none",
+              }}
+            ></div>
           </Col>
         </Row>
       </div>
