@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <nav className='navbar'>
-      <Link to='/' className='logo mt-4'>
+      <Link to='/' className='logo mb-2'>
         <img
           src={image}
           height={90}
