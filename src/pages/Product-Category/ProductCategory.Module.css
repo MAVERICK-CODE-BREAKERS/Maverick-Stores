@@ -9,7 +9,8 @@ label {
 }
 
 .laptopCheckboxContainer {
-  margin-top: 70px;
+  margin-top: 4.375rem;
+  display: block;
 }
 
 /* .nav-pills .nav-link.active,
@@ -22,18 +23,36 @@ label {
   font-size: 1.2rem;
 }
 
+.nav-link a.active {
+  background-color: #89becf;
+  border-radius: 12px;
+}
+
 .nav-pills .nav-link.active {
   background-color: #89becf;
   border-radius: 12px;
 }
+
 .accessoriesCheckboxContainer {
   display: none;
+  margin-top: 4.375rem;
 }
 
 .consolesCheckboxContainer {
   display: none;
+  margin-top: 4.375rem;
 }
 
 .SmartWatchesCheckboxContainer {
   display: none;
+  margin-top: 4.375rem;
+}
+
+.laptopsProductsContainer {
+  margin-top: 0.9rem;
+  background-color: aqua;
+  height: 500px;
+  
+  width: 100%;
+  display: block;
 }

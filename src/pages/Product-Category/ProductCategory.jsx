@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
@@ -7,11 +7,36 @@ import Banner from "../../assets/slides/Banner.jpg";
 import StyledProductCategory from "./ProductCategory.Module.css";
 
 const ProductCategory = () => {
-  const message = () => {
-    console.log("Hello-World");
+  const [isShowLaptopForm, setIsShowLaptopForm] = useState(true);
+  const [isShowConsolesForm, setIsShowConsolesForm] = useState(false);
+  const [isShowAccessoriesForm, setIsShowAccessoriesForm] = useState(false);
+  const [isShowSmartWatchesForm, setIsShowSmartWatchesForm] = useState(false);
+
+  const handleClickShow = () => {
+    setIsShowConsolesForm(true);
+    setIsShowAccessoriesForm(false);
+    setIsShowLaptopForm(false);
+    setIsShowSmartWatchesForm(false);
   };
-  const message1 = () => {
-    console.log("Hello-World1");
+  const handleClickShow1 = () => {
+    setIsShowAccessoriesForm(true);
+    setIsShowConsolesForm(false);
+    setIsShowLaptopForm(false);
+    setIsShowSmartWatchesForm(false);
+  };
+
+  const handleClickShow2 = () => {
+    setIsShowSmartWatchesForm(true);
+    setIsShowAccessoriesForm(false);
+    setIsShowLaptopForm(false);
+    setIsShowConsolesForm(false);
+  };
+
+  const handleClickShow3 = () => {
+    setIsShowSmartWatchesForm(false);
+    setIsShowAccessoriesForm(false);
+    setIsShowLaptopForm(true);
+    setIsShowConsolesForm(false);
   };
 
   return (
@@ -22,7 +47,10 @@ const ProductCategory = () => {
       <div className={StyledProductCategory.productContainer}>
         <Row>
           <Col className="Smaller" xs={2}>
-            <div className={StyledProductCategory.laptopCheckboxContainer}>
+            <div
+              className={StyledProductCategory.laptopCheckboxContainer}
+              style={{ display: isShowLaptopForm ? "block" : "none" }}
+            >
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Apple" />
@@ -35,7 +63,10 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className={StyledProductCategory.consolesCheckboxContainer}>
+            <div
+              className={StyledProductCategory.consolesCheckboxContainer}
+              style={{ display: isShowConsolesForm ? "block" : "none" }}
+            >
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Playstation" />
@@ -48,7 +79,10 @@ const ProductCategory = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className={StyledProductCategory.accessoriesCheckboxContainer}>
+            <div
+              className={StyledProductCategory.accessoriesCheckboxContainer}
+              style={{ display: isShowAccessoriesForm ? "block" : "none" }}
+            >
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
                   <Form.Check type="checkbox" label="Speakers" />
@@ -63,6 +97,7 @@ const ProductCategory = () => {
             </div>
             <div
               className={StyledProductCategory.SmartWatchesCheckboxContainer}
+              style={{ display: isShowSmartWatchesForm ? "block" : "none" }}
             >
               <Form>
                 <Form.Group className="mb-3" id="formGridCheckbox">
@@ -83,15 +118,15 @@ const ProductCategory = () => {
                 <Nav.Link
                   eventKey="link"
                   className={StyledProductCategory.navLink}
+                  onClick={handleClickShow3}
                 >
                   Laptop
                 </Nav.Link>
-                /
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link
                   eventKey="link-1"
-                  onClick={message}
+                  onClick={handleClickShow}
                   className={StyledProductCategory.navLink}
                 >
                   Consoles
@@ -100,7 +135,7 @@ const ProductCategory = () => {
               <Nav.Item>
                 <Nav.Link
                   eventKey="link-2"
-                  onClick={message1}
+                  onClick={handleClickShow1}
                   className={StyledProductCategory.navLink}
                 >
                   Accessories
@@ -109,12 +144,16 @@ const ProductCategory = () => {
               <Nav.Item>
                 <Nav.Link
                   eventKey="link-3"
+                  onClick={handleClickShow2}
                   className={StyledProductCategory.navLink}
                 >
                   SmartWatches
                 </Nav.Link>
               </Nav.Item>
             </Nav>
+            <div className={StyledProductCategory.laptopsProductsContainer}>
+              <p>lllllll</p>
+            </div>
           </Col>
         </Row>
       </div>
