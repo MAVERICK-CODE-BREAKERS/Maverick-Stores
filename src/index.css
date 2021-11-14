@@ -18,6 +18,12 @@ h3 {
   border-radius: 20px;
 }
 
+/* do not touch. For Product Category */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2cccff;
+  border-radius: 12px;
+}
 .cartBtn {
   background-color: #2cccff;
   border-radius: 0.5rem;

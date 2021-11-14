@@ -10,7 +10,7 @@ const products = [
     price: 36867.60,
     countInStock: 10,
     rating: 4.5,
-    numReviews: 12,
+    numReviews: 10,
   },
   {
     _id: '2',
