@@ -42,7 +42,9 @@
 }
 
 .cart,
-.cart-mobile {
+.cart-mobile,
+.search,
+.search-mobile {
   display: none;
 }
 
@@ -108,8 +110,21 @@
     top: 26px;
     right: 72px;
     font-size: 1.2rem;
+    text-decoration: none;
   }
   .cart-mobile:hover {
+    color: white;
+  }
+  .search-mobile {
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    right: 112px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .search-mobile:hover {
     color: white;
   }
   .ca {
