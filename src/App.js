@@ -14,6 +14,8 @@ import NotFound from "./pages/NotFound";
 import ProductCategory from "./pages/Product-Category/ProductCategory";
 import Register from "./components/user/Register";
 import WishList from "./pages/WishList/WishList";
+import Installment from "./pages/installment/Installment";
+import InstallmentForm from "./pages/installment/InstallmentForm";
 import Page from "react-page-loading";
 
 
@@ -35,6 +37,8 @@ const App = () => {
             <Route path="/register" component={Register} exact />
             <Route path="/cart/:id?" component={CartPage} />
             <Route path="/wishlist" component={WishList} exact />
+            <Route path='/installment' component={Installment}  />
+            <Route path='/installmentForm' component={InstallmentForm}  />
             <Route component={NotFound} />
           </Switch>
           <Route path="/" component={Advert} exact />

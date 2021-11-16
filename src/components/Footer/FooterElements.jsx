@@ -11,6 +11,11 @@ export const FooterContainer = styled.footer`
     color: var(--mainWhite);
     font-weight: 900;
   }
+  .fa {
+    color: var(--mainWhite);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
   .footer-bottom {
     padding-top: 2rem;
     padding-bottom: 1rem;

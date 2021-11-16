@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import products from "../../products";
 import Product from "../../components/Product";
+import { Link } from 'react-router-dom'
 // import product from '../ProductScreen'
 import Image from "react-bootstrap/Image";
 import Banner from "../../assets/slides/Banner.jpg";
@@ -96,8 +97,11 @@ const ProductCategory = ({ history, match }) => {
 
   return (
     <div>
-      <div className="image-container my-5">
+      <div className='image-container my-5'>
+        <Link 
+        to='/installment'>
         <Image src={Banner} thumbnail />
+        </Link>
       </div>
       <div className={StyledProductCategory.productContainer}>
         <Row>
