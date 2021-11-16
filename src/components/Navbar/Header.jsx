@@ -6,6 +6,7 @@ import image from './maverick_logo2.png'
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false)
   const [cart, setCart] = useState(false)
+  const [search, setSearch] = useState(false)
 
   return (
     <nav className={styled.navbar}>
@@ -54,6 +55,17 @@ const Header = () => {
           <li>Login/Register</li>
         </Link>
       </ul>
+      <Link
+        to='#'
+        className={search ? styled['search'] : styled['search-mobile']}
+        onClick={() => {
+          setMenuBar(false)
+          setCart(false)
+          setSearch(false)
+        }}
+      >
+        <i className='fa fa-search' />
+      </Link>
       <Link
         to='/cart'
         className={cart ? styled['cart'] : styled['cart-mobile']}
