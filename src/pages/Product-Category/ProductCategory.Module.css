@@ -1,5 +1,5 @@
 .productContainer {
-  height: 80vh;
+  min-height: 100vh;
   width: 95%;
   margin: 0 auto;
 }
@@ -33,6 +33,10 @@ label {
   border-radius: 12px;
 }
 
+.Smaller {
+  border-right: 1px solid gray;
+}
+
 .accessoriesCheckboxContainer {
   display: none;
   margin-top: 4.375rem;
@@ -48,27 +52,48 @@ label {
   margin-top: 4.375rem;
 }
 
+.smartphonesCheckboxContainer {
+  display: none;
+  margin-top: 4.375rem;
+}
+
 .laptopsProductsContainer {
   margin-top: 1.9rem;
-  width: 100%;
+  margin-left: 1.3rem;
+  width: 95%;
+  margin: 0 auto;
   display: block;
 }
 
 .consoleProductsContainer {
   margin-top: 1.9rem;
-  width: 100%;
+  margin-left: 1.3rem;
+  width: 95%;
+  margin: 0 auto;
   display: none;
 }
 
 .accessoriesProductsContainer {
   margin-top: 1.9rem;
-  width: 100%;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
   display: none;
 }
- 
-.smartWatchesProductsContainer{
+
+.smartWatchesProductsContainer {
   margin-top: 1.9rem;
-  width: 100%;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
+  display: none;
+}
+
+.smartphoneProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
   display: none;
 }
 
