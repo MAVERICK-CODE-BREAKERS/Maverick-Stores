@@ -94,6 +94,7 @@ const ProductCategory = ({ history, match }) => {
     setIsShowSmartphonesForm(true)
     setIsShowSmartphonesContainer(true)
   }
+  const randomNumber = Math.floor(Math.random() * (8 - 1 + 1) + 1)
 
   return (
     <div>
@@ -204,9 +205,12 @@ const ProductCategory = ({ history, match }) => {
 
             <div className='random-product'>
               <Row>
-                {/* {products.map((relatedProducts) => {
-                  const randomNumber = Math.floor(Math.random() *  (8 - 1 + 1) + 1);
-                  if (relatedProducts._id === randomNumber.toString()) {
+                {products
+                  .filter(
+                    (relatedProducts) =>
+                      relatedProducts._id === randomNumber.toString()
+                  )
+                  .map((relatedProducts) => {
                     return (
                       <Col
                         key={relatedProducts._id}
@@ -217,9 +221,8 @@ const ProductCategory = ({ history, match }) => {
                       >
                         <Product product={relatedProducts} />
                       </Col>
-                    );
-                  }
-                })} */}
+                    )
+                  })}
               </Row>
             </div>
           </Col>
