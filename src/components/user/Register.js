@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import { Link } from 'react-router-dom'
 import * as Yup from "yup";
-import "./Register.css";
+import RegisterCss from "./Register.module.css"
 
 const initialValues = {
   Fullname: "",
@@ -72,9 +72,9 @@ function Register() {
 
   return (
     <React.Fragment>
-      <div className="main-div">
-        <div className="div-1">
-          <div className="Path-flex">
+      <div className={RegisterCss.mainDiv}>
+        <div className={RegisterCss.div1}>
+          <div className={RegisterCss.pathFlex}>
             <Link to="/LogIn">
               <h3>Login</h3>
             </Link>
@@ -82,16 +82,21 @@ function Register() {
               <h3>Register</h3>
             </Link>
           </div>
-          <form className="Register" onSubmit={formik.handleSubmit}>
+          <form className={RegisterCss.Register} onSubmit={formik.handleSubmit}>
+           <div className={RegisterCss.regUser}>
+           <i className="fas fa-user"></i>
             <input
               type="text"
               id="Fullname"
-              placeholder="Full name"
+              placeholder="full name"
               {...formik.getFieldProps("Fullname")}
             />{" "}
             {formik.touched.Fullname && formik.errors.Fullname ? (
               <div className="error">{formik.errors.Fullname}</div>
             ) : null}
+            </div>
+            <div className={RegisterCss.puser}>
+            <i className="fas fa-user"></i>
             <input
               type="text"
               id="PUsername"
@@ -99,17 +104,23 @@ function Register() {
               {...formik.getFieldProps("PUsername")}
             />
             {formik.touched.PUsername && formik.errors.PUsername ? (
-              <div className="error">{formik.errors.PUsername}</div>
-            ) : null}
-            <input
+              <div className={RegisterCss.error}>{formik.errors.PUsername}</div>
+            ) : null} </div>
+           
+           <div className={RegisterCss.regmail}>
+           <i class="fas fa-envelope"></i>
+          <input
               type="text"
               id="email"
-              placeholder="username/email"
+              placeholder="email"
               {...formik.getFieldProps("email")}
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="error">{formik.errors.email}</div>
             ) : null}
+             </div>
+             <div className={RegisterCss.regPhone}>
+             <i className="fas fa-phone-square-alt"></i>
             <input
               type="number"
               id="phone"
@@ -119,6 +130,9 @@ function Register() {
             {formik.touched.phone && formik.errors.phone ? (
               <div className="error">{formik.errors.phone}</div>
             ) : null}
+            </div>
+            <div className={RegisterCss.regPwd}>
+            <i className="fas fa-lock"></i>
             <input
               type="text"
               id="password"
@@ -128,6 +142,10 @@ function Register() {
             {formik.touched.password && formik.errors.password ? (
               <div className="error">{formik.errors.password}</div>
             ) : null}
+            </div>
+            <div className={RegisterCss.regPwd}>
+            <i className="fas fa-lock"></i>
+            
             <input
               type="text"
               id="cPassword"
@@ -137,27 +155,25 @@ function Register() {
             {formik.touched.cPassword && formik.errors.cPassword ? (
               <div className="error">{formik.errors.cPassword}</div>
             ) : null}
-            <input
-              type="checkbox"
-              name="terms-and-conditions"
-              id="termsAndConditions"
-              {...formik.getFieldProps("termsAndConditions")}
-            />
-            {formik.touched.termsAndConditions &&
-            formik.errors.termsAndConditions ? (
-              <div className="error">{formik.errors.termsAndConditions}</div>
-            ) : null}
-            <label for="terms-and-conditions">
-              I have read, Understood and accept the terms and conditions
-            </label>
-            <div className="LinkToSignIn">
-              Have An Account? Click 
-              {/* <a href="#"> */}
-                Here
-                {/* </a>  */}
-                To Sign In{" "}
             </div>
-            <input type="submit" id="Register" value="Register" />
+         <div className={RegisterCss.checkBox}>
+         <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" className="check-box-input" required/>
+         <label for="terms-and-conditions">I have read, Understood and accept the terms and conditions</label>
+        </div>
+
+           
+            <div className={RegisterCss.LinkToSignIn}>
+              Have An Account? Click 
+              <Link to="/LogIn">
+                Here
+                </Link> 
+                To Sign In{" "}
+            
+            <button className={RegisterCss.button}>
+                <span className={RegisterCss.reg}>Register</span>
+                <i className="fas fa-sign-in-alt"></i>
+              </button>
+              </div>
           </form>
         </div>
       </div>

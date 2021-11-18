@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* breadcumb */
+.li-1 {
+  text-decoration: none;
+  color: #444444;
+}
+.li-2 {
+  color: #444444;
+}
+/* .underline {
+  text-decoration: underline;
+} */
+
+.mainDiv{
+  background-color: #7adfff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.div1 {
+  background: #fff;
+  width: 30rem;
+  height: 100%;
+  
+}
+.pathFlex {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  width: 30rem;
+ 
+}
+.pathFlex > Link > h3 {
+  text-transform: uppercase;
+}
+
+.pathFlex > h3 :active{
+  text-decoration: underline;
+}
+.Login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+  .group{
+    display: flex;
+    justify-content: space-between;
+  
+   
+  }
+  .check > input {
+  display: inline;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  
+  
+  }
+
+  .linking{
+    font-size: 18px;
+    color: black;
+  }
+
+  .check > label{
+    font-size: 18px;
+    color: black;
+  }
+ 
+
+/* .group .linking {
+  float: right;
+  text-decoration: none;
+  color: #000;
+} */
+/* .Login input[type='submit'] {
+  width: 40%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: auto;
+  background-color: #7adfff;
+} */
+
+.error {
+  color: red;
+}
+input{
+width: 100%;
+padding: 12px 40px;
+margin: 8px 0;
+display: inline-block;
+border-radius: 25px;
+border: 1px solid #000;
+
+}
+.user {
+position: relative;
+}
+
+.user i{
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  color: black;
+}
+
+.user > input::placeholder {
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.pwd{
+  position: relative;
+
+}
+
+.pwd i{
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  color: black;
+}
+
+.pwd > input::placeholder {
+ font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.submit{
+  font-size:20px;
+  
+  
+}
+.alt {
+  position: relative;
+  
+}
+
+.alt i{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color:#fff;
+  font-size: 24px;
+}
+
+.alt > input{
+  font-size: #fff;
+}
+
+.submit{
+  width: 40%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: auto;
+  background-color: #19b3e2;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+}
+
+.sub{
+  margin-right: 15px;
+}
+

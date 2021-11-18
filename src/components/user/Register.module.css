@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* breadcumb */
+.li-1 {
+  text-decoration: none;
+  color: #444444;
+}
+.li-2 {
+  color: #444444;
+}
+/* .underline {
+  text-decoration: underline;
+} */
+
+.mainDiv{
+  background-color: #7adfff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.div1 {
+  background: #fff;
+  max-width: 50rem;
+  height: 100%;
+}
+
+.Register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  margin: 30px;
+}
+.Register > input {
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.Register > input::placeholder {
+  color: #000;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.pathFlex {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  
+}
+.pathFlex > Link > h3 {
+  text-transform: uppercase;
+}
+.Register > #Register {
+  width: 50%;
+  background-color: #7adfff;
+  margin: auto;
+}
+.LinkToSignIn > Link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+.error {
+  color: red;
+}
+
+.checkBox{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+ 
+}
+.checkBox > input {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  
+}
+.regUser {
+  position: relative;
+  }
+  
+  .regUser i{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: black;
+  }
+  
+  .regUser > input::placeholder {
+        font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .puser {
+    position: relative;
+    }
+    
+    .puser i{
+      position: absolute;
+      left: 15px;
+      top: 25px;
+      color: black;
+    }
+    
+    .puser > input::placeholder {
+      font-size: 24px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .regmail {
+      position: relative;
+      }
+      
+      .regmail i{
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        color: black;
+      }
+      
+      .regmail > input::placeholder {
+       
+        font-size: 24px;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+
+
+      .regPhone {
+        position: relative;
+        }
+        
+        .regPhone i{
+          position: absolute;
+          left: 15px;
+          font-size: 24px;
+          top: 25px;
+          color: rgb(41, 40, 40);
+        }
+        
+        .regPhone > input::placeholder {
+         
+          font-size: 24px;
+          font-family: 'Josefin Sans', sans-serif;
+        }
+
+        
+
+  .regPwd{
+    position: relative;
+  
+  }
+  
+  .regPwd i{
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    color: black;
+  }
+  
+  .regPwd > input::placeholder {
+   
+        font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .button{
+   
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto;
+    background-color: #19b3e2;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 8px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 10pzpx;
+    width: 30%;
+   
+  }
+
+  
+  .reg{
+    margin-right: 15px;
+  }
+
+  
