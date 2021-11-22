@@ -9,7 +9,7 @@ import {
   Form,
   Container,
 } from 'react-bootstrap'
-import Rating from '../components/Rating'
+// import Rating from '../components/Rating'
 import Naira from 'react-naira'
 import '../index.css'
 import {
@@ -73,12 +73,12 @@ const ProductScreen = ({ history, match }) => {
               <ListGroup.Item>
                 Price: <Naira>{product.price}</Naira>
               </ListGroup.Item>
-              <ListGroup.Item>
+              {/* <ListGroup.Item>
                 <Rating
-                // value={product.rating.rate}
-                // text={`${product.rating.count} reviews`}
+                  value={product.rating.rate}
+                  text={`${product.rating.count} reviews`}
                 />
-              </ListGroup.Item>
+              </ListGroup.Item> */}
               <ListGroup.Item>
                 Description: {product.description}
               </ListGroup.Item>
