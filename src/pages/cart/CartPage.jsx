@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import './Cart.css'
+import styledCart from './Cart.Module.css'
 
 const CartPage = () => {
   return (
     <Container>
-      <div id='cart-div'>
+      <div className={styledCart.cartDiv}>
         {/* <h1>Cart</h1> */}
-        <div id='tab-div'>
-          <table id='cart-table'>
+        <div className={styledCart.tabDiv}>
+          <table className={styledCart.cartTable}>
             <tbody>
               <tr></tr>
             </tbody>
@@ -52,13 +52,13 @@ const CartPage = () => {
                   <span>₦</span> 4,000
                 </td>
                 <td>
-                  <button className='tab-btn'>
+                  <button className={styledCart.tabBtn}>
                     <span onclick='decreaseInput()'>-</span>
                     <input
                       type='text'
                       defaultValue={1}
                       id='inputNumber'
-                      className='rollingNum'
+                      className={styledCart.quan}
                     />
                     <span onclick='increaseInput()'>+</span>
                   </button>
@@ -84,13 +84,13 @@ const CartPage = () => {
                   <span>₦</span> 4,000
                 </td>
                 <td>
-                  <button className='tab-btn'>
+                  <button className={styledCart.tabBtn}>
                     <span onclick='decrInput()'>-</span>
                     <input
                       type='text'
                       defaultValue={1}
                       id='rollingNumber'
-                      className='rollingNum'
+                      className={styledCart.quan}
                     />
                     <span onclick='incrInput()'>+</span>
                   </button>
@@ -116,13 +116,13 @@ const CartPage = () => {
                   <span>₦</span> 4,000
                 </td>
                 <td>
-                  <button className='tab-btn'>
+                  <button className={styledCart.tabBtn}>
                     <span onclick='decInput()'>-</span>
                     <input
                       type='text'
                       defaultValue={1}
                       id='scrollingNumber'
-                      className='rollingNum'
+                      className={styledCart.quan}
                     />
                     <span onclick='incInput()'>+</span>
                   </button>
@@ -134,17 +134,17 @@ const CartPage = () => {
             </tbody>
           </table>{' '}
           <br />
-          <div id='btn'>
-            <button className='white-btn'>Have A Coupon Code? </button>
-            <button className='blue-btn' id='blue2'>
+          <div className={styledCart.btn}>
+            <button className={styledCart.whiteBtn}>Have A Coupon Code? </button>
+            <button className={`${styledCart.blueBtn} ${styledCart.blue2}`} >
               Apply Coupon{' '}
             </button>
-            <button className='ash-btn'>Update Cart</button>
+            <button className={styledCart.ashBtn}>Update Cart</button>
           </div>
         </div>
 
         <div>
-          <div id='total'>
+          <div className={styledCart.total}>
             <br />
             <h4>Cart Totals</h4> <br />
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -167,13 +167,13 @@ const CartPage = () => {
               </strong>
             </div>{' '}
             <br />
-            <button className='blue-btn' id='blue1'>
+            <button className={`${styledCart.blueBtn} {styledCart.blue1}`}>
               Proceed to Checkout
             </button>
           </div>
           <br />
           <br />
-          <button className='blue-btn'>Continue Shopping </button>
+          <button className={styledCart.blueBtn}>Continue Shopping </button>
         </div>
       </div>
     </Container>
