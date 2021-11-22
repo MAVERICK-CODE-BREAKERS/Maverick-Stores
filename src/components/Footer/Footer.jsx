@@ -141,12 +141,12 @@ const Footer = () => {
                 Products.
               </p>
 
-              <form class='form-inline'>
+              <form className='form-inline'>
                 <div className='col-auto'>
                   <div className='input-group mb-2'>
                     <input
                       type='email'
-                      class='form-control'
+                      className='form-control'
                       id='inlineFormInputGroup'
                       placeholder='Email'
                     />

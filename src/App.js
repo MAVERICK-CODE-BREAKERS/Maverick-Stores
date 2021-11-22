@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { Container } from 'react-bootstrap'
+import { Provider } from 'react-redux'
+import store from "./redux/store";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Navbar/Header";
 import HomeProducts from "./pages/HomeProducts";
@@ -23,6 +24,7 @@ import Page from "react-page-loading";
 const App = () => {
   return (
     <Router>
+      <Provider store={store}>
       <Page loader={"bubble-spin"} color={"#2cccff"} size={9}>
         <Header />
         <main>
@@ -46,6 +48,7 @@ const App = () => {
         </main>
         <Footer />
       </Page>
+      </Provider>
     </Router>
   );
 };
