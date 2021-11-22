@@ -1,0 +1,118 @@
+
+.cartDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total{
+  width: 400px;
+  height: 450px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 25px;
+  line-height: 29px;
+}
+
+.blueBtn{
+  background: #2CCCFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  width:  170px;
+  height: 41px;
+  left: 1003px;
+  top: 841px;
+  margin-left: 65px;
+}
+.blue1{
+  width: 250px;
+  height: 41px;
+  left: 1003px;
+  top: 841px; 
+}
+.blue2{
+  margin-left: -70px;
+}
+
+.whiteBtn{
+  width: 200px;
+  height: 41px;
+  /* left: 102px; */
+  top: 1024px;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-left: -80px;
+}
+.ashBtn{
+  width: 150px;
+  height: 41px;
+  left: 622px;
+  top: 1024px;
+  align-items: center;
+  color: #FFFFFF;
+  background: #95B3BC;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.tabDiv{
+  width: 737px;
+}
+ table {
+  width: 90%;
+}
+
+th {
+  height: 70px;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+td {
+  text-align: center;
+  height: 50px;
+  padding: 10px;
+  
+  
+} 
+
+.qty-btn{
+  width: 70px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+.tabBtn{
+  width: 115px;
+  height: 29px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+.quan{
+  width: 70px; 
+  border: none; 
+  text-align: center;
+  outline:0;
+}
+
