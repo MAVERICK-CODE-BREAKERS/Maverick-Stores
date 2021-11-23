@@ -53,14 +53,14 @@ const CartPage = () => {
                 </td>
                 <td>
                   <button className={styledCart.tabBtn}>
-                    <span onclick='decreaseInput()'>-</span>
+                    <span >-</span>
                     <input
                       type='text'
                       defaultValue={1}
                       id='inputNumber'
                       className={styledCart.quan}
                     />
-                    <span onclick='increaseInput()'>+</span>
+                    <span>+</span>
                   </button>
                 </td>
                 <td>
@@ -85,14 +85,13 @@ const CartPage = () => {
                 </td>
                 <td>
                   <button className={styledCart.tabBtn}>
-                    <span onclick='decrInput()'>-</span>
+                    <span >-</span>
                     <input
                       type='text'
                       defaultValue={1}
-                      id='rollingNumber'
                       className={styledCart.quan}
                     />
-                    <span onclick='incrInput()'>+</span>
+                    <span >+</span>
                   </button>
                 </td>
                 <td>
@@ -117,14 +116,13 @@ const CartPage = () => {
                 </td>
                 <td>
                   <button className={styledCart.tabBtn}>
-                    <span onclick='decInput()'>-</span>
+                    <span>-</span>
                     <input
                       type='text'
                       defaultValue={1}
-                      id='scrollingNumber'
                       className={styledCart.quan}
                     />
-                    <span onclick='incInput()'>+</span>
+                    <span >+</span>
                   </button>
                 </td>
                 <td>
