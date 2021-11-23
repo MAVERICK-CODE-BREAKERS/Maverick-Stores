@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to='/wishlist'
+                    to='/'
                     style={{
                       textDecoration: 'none',
                       color: 'rgb(172, 172, 172)',

@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Register from "./components/user/Register";
 import WishList from "./pages/WishList/WishList";
 import Page from 'react-page-loading';
+import CheckOutPage from "./pages/CheckOutPage/CheckOutPage";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/register' component={Register} exact />
           <Route path='/cart/:id?' component={CartPage} />
           <Route path='/wishlist' component={WishList} exact />
+          <Route path='/checkoutpage' component={CheckOutPage} exact />
           <Route  component={NotFound}/>
       </Switch>
     <Route path='/' component={Advert} exact />
