@@ -19,7 +19,7 @@ const WishList = () => {
           <h3>My WishList</h3>
         </div>
         <div className='card card-body mb-3 border-0 rounded'>
-          <Row className={styledWishList.cardBody}>
+          <Row className={`${styledWishList.cardBody} rounded`}>
             <Col md={2}>
               <Image
                 className='img'
@@ -40,7 +40,7 @@ const WishList = () => {
         </div>
 
         <div className='card card-body mb-3 border-0'>
-          <Row className={styledWishList.cardBody}>
+          <Row className={`${styledWishList.cardBody} rounded`}>
             <Col md={2}>
               <Image
                 className='img'
@@ -62,7 +62,7 @@ const WishList = () => {
         </div>
 
         <div className='card card-body mb-3 border-0'>
-          <Row className={styledWishList.cardBody}>
+          <Row className={`${styledWishList.cardBody} rounded`}>
             <Col md={2}>
               <Image
                 className='img'

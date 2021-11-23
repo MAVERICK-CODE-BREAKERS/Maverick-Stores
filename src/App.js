@@ -17,6 +17,7 @@ import Register from "./components/user/Register";
 import WishList from "./pages/WishList/WishList";
 import Installment from "./pages/installment/Installment";
 import InstallmentForm from "./pages/installment/InstallmentForm";
+import CheckOutPage from "./pages/CheckOutPage/CheckOutPage"
 import Page from "react-page-loading";
 
 
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/wishlist" component={WishList} exact />
             <Route path='/installment' component={Installment}  />
             <Route path='/installmentForm' component={InstallmentForm}  />
+            <Route path='/CheckOutPage' component={CheckOutPage} exact />
             <Route component={NotFound} />
           </Switch>
           <Route path="/" component={Advert} exact />
