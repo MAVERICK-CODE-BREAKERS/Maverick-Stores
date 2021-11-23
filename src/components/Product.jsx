@@ -7,24 +7,32 @@ import '../index.css'
 
 const Product = ({ product }) => {
   return (
-    <Card className='my-3 p-3 rounded'>
+    <Card className='my-3 p-3 rounded' style={{ minHeight: '70vh' }}>
       <div className='prod'>
-        <Card.Img className='img' src={product.image} variant='top' />
+        <Card.Img
+          className='img'
+          src={product.image}
+          variant='top'
+          style={{ height: '30vh' }}
+        />
         <Link to={'/cart'}>
           <i className='fas fa-shopping-cart' />
         </Link>
       </div>
 
       <Card.Body>
-        <Link to={`/product/${product._id}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
           <Card.Title as='div'>
-            <strong>{product.name}</strong>
+            <strong>{product.title}</strong>
           </Card.Title>
         </Link>
       </Card.Body>
 
       <Card.Text as='div'>
-        <Rating value={product.rating} text={`${product.numReviews} reviews`} />
+        <Rating
+          value={product.rating.rate}
+          text={`${product.rating.count} reviews`}
+        />
       </Card.Text>
 
       <Card.Text as='h3'>

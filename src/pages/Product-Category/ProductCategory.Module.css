@@ -1,0 +1,107 @@
+.productContainer {
+  min-height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+.laptopCheckboxContainer {
+  margin-top: 4.375rem;
+  display: block;
+}
+
+/* .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2cccff;
+  border-radius: 12px;
+} */
+
+.navLink {
+  font-size: 1.2rem;
+}
+
+.nav-link a.active {
+  background-color: #89becf;
+  border-radius: 12px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #89becf;
+  border-radius: 12px;
+}
+
+.Smaller {
+  border-right: 1px solid gray;
+}
+
+.accessoriesCheckboxContainer {
+  display: none;
+  margin-top: 4.375rem;
+}
+
+.consolesCheckboxContainer {
+  display: none;
+  margin-top: 4.375rem;
+}
+
+.SmartWatchesCheckboxContainer {
+  display: none;
+  margin-top: 4.375rem;
+}
+
+.smartphonesCheckboxContainer {
+  display: none;
+  margin-top: 4.375rem;
+}
+
+.laptopsProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+.consoleProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+  width: 95%;
+  margin: 0 auto;
+  display: none;
+}
+
+.accessoriesProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
+  display: none;
+}
+
+.smartWatchesProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
+  display: none;
+}
+
+.smartphoneProductsContainer {
+  margin-top: 1.9rem;
+  margin-left: 1.3rem;
+   width: 95%;
+  margin: 0 auto;
+  display: none;
+}
+
+.PriceAdjustContainer {
+  margin-top: 3.7rem;
+}
+
+.priceLabel {
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+}

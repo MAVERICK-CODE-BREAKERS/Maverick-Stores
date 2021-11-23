@@ -1,0 +1,37 @@
+.installmentBody{
+    background: #f8f8f8;
+    padding:50px;
+    margin-top: 10px;
+}
+.installmentFormBody{
+    background: #ececec;
+    padding:50px;
+}
+
+.cardBody{
+    background: #fff;
+}
+.bolder{
+    font-size: larger;
+    font-weight: bolder;
+}
+.red{
+    color: rgb(211, 8, 8);
+    padding-top: 10px;
+}
+.bold{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top:50px;
+}
+.installmentIcon{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 5px;
+    background: red;
+    color: #fff;
+    padding: 5px;
+    /* border-radius: 50%; */
+    text-align: center;
+}

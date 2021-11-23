@@ -14,8 +14,7 @@ const Footer = () => {
               <h4 className='header'>Contact Us:</h4>
               <ul className='list-unstyled'>
                 <li>
-                  <i className='fa fa-home me-3'></i>28B,Unity Crescent, Ikeja
-                  GRA,Lagos
+                  <i className='fa fa-home me-3'></i>28B,Unity St, Ikeja
                 </li>
                 <li>
                   <i className='fa fa-envelope me-3' id='envelope'></i>
@@ -142,13 +141,29 @@ const Footer = () => {
                 Products.
               </p>
 
-              <input
-                type='text'
-                className='form-control'
-                id='inlineFormInputGroupUsername'
-                placeholder='Email'
-              />
-              {/* <i className='fa fa-envelope'></i> */}
+              <form className='form-inline'>
+                <div className='col-auto'>
+                  <div className='input-group mb-2'>
+                    <input
+                      type='email'
+                      className='form-control'
+                      id='inlineFormInputGroup'
+                      placeholder='Email'
+                    />
+                    <div
+                      className='input-group-prepend'
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <div
+                        className='input-group-text'
+                        style={{ background: '#2cccff', color: 'white' }}
+                      >
+                        Submit
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </Col>
           </Row>
 
